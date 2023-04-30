@@ -6,5 +6,7 @@ from test_app.models import Test
 from test_app.serializers import TestSerializer
 
 class TestViewSet(viewsets.ModelViewSet):
-    querySet = Test.objects.all() # Test클래스 안의 모든 것을 queryset으로 저장
+    queryset = Test.objects.all() # Test클래스 안의 모든 것을 queryset으로 저장
     serializer_class = TestSerializer
+
+    #querySet을 set으로 바꿔주니까 오류해결될듯말듯듯

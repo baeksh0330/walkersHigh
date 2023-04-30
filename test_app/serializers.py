@@ -6,6 +6,6 @@ from test_app.models import Test
 class TestSerializer(serializers.ModelSerializer):
     class Meta:
         model = Test
-        fields = ('test','id' )
+        fields = ('test','id')
         # fields : Person안의 field중 표시하고 싶은 것들을 순서대로 써주면 됨
         # id는 자동 생성됨.
